@@ -1,5 +1,6 @@
 import copy
 
+
 class gcode_class:
     def __init__(self):
         self.G: int = 0
@@ -14,25 +15,25 @@ class gcode_class:
 
 
 def getStartToEnd(coords):
+    coordinates = copy.deepcopy(coords)
     tmp = []
     listWithLines = []
-    for x in range(len(coords) - 1):
-        if coords[x + 1].G != 0:
-            coords[x].G = 1
-            tmp.append(coords[x])
-            tmp.append(coords[x + 1])
+    for x in range(len(coordinates) - 1):
+        if coordinates[x + 1].G != 0:
+            tmp.append(coordinates[x])
+            tmp.append(coordinates[x + 1])
             listWithLines.append(copy.copy(tmp))
             tmp = []
-
+        else:
+            coordinates[x].G = 1
     return listWithLines
 
 
 def parse_gcode():
-    coords = []
-    with open(f"gcode.txt", "r") as gcode:
-        data = gcode.readlines()
+    gcode = []
+    with open(f"gcode.txt", "r") as gcode_file:
+        data = gcode_file.readlines()
         for line in data:
-            # if not line.startswith("G0"):
             tmp = gcode_class()
             elements = line.split(' ')
             for e in elements:
@@ -43,14 +44,5 @@ def parse_gcode():
                     tmp.Y = int(e.strip()[1:])
                 if c == 'G' and len(elements) > 1:
                     tmp.G = int(e.strip()[1:])
-            coords.append(copy.copy(tmp))
-    return coords
-
-
-
-if __name__ == "__main__":
-    coords = parse_gcode()
-    coords = getStartToEnd(coords)
-
-    for x in coords:
-        print(x)
+            gcode.append(copy.copy(tmp))
+    return copy.deepcopy(gcode)
