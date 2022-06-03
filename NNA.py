@@ -17,10 +17,12 @@ def toFile(lines):
 
 def calculateDistance(x1, y1, x2, y2):
     dist = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+
     return dist
 
 
 def optimize(lines):
+
     newGcode = []
     index = 0
     tmpclass = parser.gcode_class()
@@ -69,6 +71,8 @@ def optimize(lines):
 
     return newGcode
 
+
+        
 
     # optimizedLines = []
     # current_x = 0
@@ -124,4 +128,3 @@ optimizedLines = optimize(lines)
 # for x in optimizedLines:
     # print(x)
 toFile(optimizedLines)
-
