@@ -86,12 +86,13 @@ if __name__ == "__main__":
     shortest_route = None
     shortest_dist = -1
     for route in routes:    # [1, 2, 0, 7, 8]
-        size = 0
+        dist = calculateDistance(0, 0, route[0].begin[0], route[0].begin[1])
         for i in range(len(route)-1):
-            size += calculateDistance(route[i].end[0], route[i].end[1], route[i+1].begin[0], route[i+1].begin[1])
-        if shortest_dist == -1 or size < shortest_dist:
+            dist += calculateDistance(route[i].end[0], route[i].end[1], route[i+1].begin[0], route[i+1].begin[1])
+        dist += route[-1].end[0]+route[-1].end[1]
+        if shortest_dist == -1 or dist < shortest_dist:
             shortest_route = route
-            shortest_dist = size
+            shortest_dist = dist
 
     print(f"Shortest route: {shortest_route}\nShortest distance: {shortest_dist}")
     write_route_gcode_to_file(shortest_route)
