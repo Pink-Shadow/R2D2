@@ -1,5 +1,7 @@
 import copy
 import math
+import time
+import random
 import itertools as it
 
 class DrawObject:
@@ -18,7 +20,6 @@ class DrawObject:
         gcode = []
 
         gcode.append(f"G0 X{self.begin[0]} Y{self.begin[1]}")
-        gcode.append(f"G0 {self.Gcode[0][self.Gcode[0].index('X'):]}")
         for line in self.Gcode:
             gcode.append(line)
 
@@ -44,7 +45,7 @@ def parse_gcode():
                     if c == 'Y':
                         tmp.begin.append(int(e.strip()[1:]))
 
-            elif line.startswith('G1') and data[i+1].startswith('G0'):
+            elif line.startswith('G1') and (data[i+1].startswith('G0') or (i+1 == len(data)) or data[i+1].startswith('G28')) :
                 tmp.Gcode.append(line)
 
                 elements = line.split(' ')
@@ -79,20 +80,33 @@ def calculateDistance(x1,y1,x2,y2):
     dist = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
     return dist
 
+def calculate_dist_route(route):
+    dist = calculateDistance(0, 0, route[0].begin[0], route[0].begin[1])
+    for i in range(len(route)-1):
+        dist += calculateDistance(route[i].end[0], route[i].end[1], route[i+1].begin[0], route[i+1].begin[1])
+    dist += route[-1].end[0]+route[-1].end[1]
+
+    return dist
+    
+
 if __name__ == "__main__":
     objects = parse_gcode()
-    routes = list(it.permutations(objects)) 
-    
-    shortest_route = None
-    shortest_dist = -1
-    for route in routes:    # [1, 2, 0, 7, 8]
-        dist = calculateDistance(0, 0, route[0].begin[0], route[0].begin[1])
-        for i in range(len(route)-1):
-            dist += calculateDistance(route[i].end[0], route[i].end[1], route[i+1].begin[0], route[i+1].begin[1])
-        dist += route[-1].end[0]+route[-1].end[1]
-        if shortest_dist == -1 or dist < shortest_dist:
-            shortest_route = route
-            shortest_dist = dist
 
-    print(f"Shortest route: {shortest_route}\nShortest distance: {shortest_dist}")
+    iterations = 1
+    first_route = copy.deepcopy(objects)
+    shortest_route = first_route
+    shortest_dist = calculate_dist_route(first_route)
+
+    current_time = time.perf_counter()
+    while time.perf_counter() - current_time < 120:
+        random.shuffle(objects)
+        dist = calculate_dist_route(objects)
+        if shortest_dist == -1 or dist < shortest_dist:
+            print(f"change to: {dist} from {shortest_dist}")
+            shortest_route = copy.deepcopy(objects)
+            shortest_dist = dist
+        iterations += 1
+
     write_route_gcode_to_file(shortest_route)
+    print(shortest_route)
+    print(f"iterations: {iterations}")
