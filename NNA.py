@@ -17,62 +17,63 @@ def toFile(lines):
 
 def calculateDistance(x1, y1, x2, y2):
     dist = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
-
     return dist
 
 
 def optimize(lines):
-
     newGcode = []
-    index = 0
+    index = -1
     tmpclass = parser.gcode_class()
+    shortestLine = parser.gcode_class()
 
-    while len(lines) != 0:
+    while len(lines)-1 != 0:
         distanceNotNull = False
         distance = 0
         shortestIndex = 0
         lastDistance = 30000
-        currentX = lines[shortestIndex][1].X
-        currentY = lines[shortestIndex][1].Y
-        lines.pop(shortestIndex)
-        for i in range(len(lines)):
-            if currentX == lines[i][1].X and currentY == lines[i][1].Y:
+        currentXbegin = lines[shortestIndex][0].X
+        currentXend = lines[shortestIndex][1].X
+        currentYbegin = lines[shortestIndex][0].Y
+        currentYend = lines[shortestIndex][1].Y
+
+        for i in range(len(lines)-1):
+            if (currentXend == lines[i][1].X and currentYend == lines[i][1].Y) and currentXbegin == lines[i][0].X and currentYbegin == lines[i][0].Y:
+                # gelijk aan zichzelf (eindpunten
                 # print("if ")
                 # shortestIndex = i
                 continue
 
-            elif currentX == lines[i][0].X and currentY == lines[i][0].Y:
+            elif currentXend == lines[i][0].X and currentYend == lines[i][0].Y:
+                # aan elkaar vast
                 # print("elif")
-                # tmpclass.G = 1
-                # tmpclass.X = currentX
-                # tmpclass.Y = currentY
-                # newGcode.append(copy.copy(tmpclass))
+                tmpclass.G = 1
+                tmpclass.X = currentXend
+                tmpclass.Y = currentYend
+                newGcode.append(copy.copy(tmpclass))
                 tmpclass.G = 1
                 tmpclass.X = lines[i][1].X
                 tmpclass.Y = lines[i][1].Y
                 newGcode.append(copy.copy(tmpclass))
-                shortestIndex = i
+                index = i
+                break
             else:
-
-                distance = calculateDistance(currentX, currentY, lines[i][0].X, lines[i][0].Y)
-
+                distanceNotNull = True
+                distance = calculateDistance(currentXend, currentYend, lines[i][0].X, lines[i][0].Y)
                 if distance < lastDistance:
-                    distanceNotNull = True
                     # print("else")
                     lastDistance = distance
-                    shortestIndex = i
-
+                    shortestLine = lines[i][0]
+                    index = i
         if distanceNotNull:
-            distanceNotNull = False
             tmpclass.G = 0
-            tmpclass.X = lines[shortestIndex][1].X
-            tmpclass.Y = lines[shortestIndex][1].Y
+            tmpclass.X = shortestLine.X
+            tmpclass.Y = shortestLine.Y
             newGcode.append(copy.copy(tmpclass))
+            newGcode.append(copy.copy(shortestLine))
+
+        lines.pop(index)
 
     return newGcode
-
-
-        
 
     # optimizedLines = []
     # current_x = 0
@@ -126,5 +127,6 @@ lines = parser.getStartToEnd(coords)
 optimizedLines = optimize(lines)
 
 # for x in optimizedLines:
-    # print(x)
+# print(x)
+print(optimizedLines)
 toFile(optimizedLines)
