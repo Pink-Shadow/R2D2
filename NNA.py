@@ -6,6 +6,29 @@ import math
 
 optimizedLines = []
 
+def backToGcode():
+    file = open("optimizedGcode.txt", "w")
+    print(optimizedLines[0])
+    for i in range(len(optimizedLines)):
+        if( i % 2 ):
+            file.write("G")
+            file.write(str(optimizedLines[i][0][0]))
+            file.write(" X")
+            file.write(str(optimizedLines[i][0][1][0]))
+            file.write(" Y")
+            file.write(str(optimizedLines[i][0][1][1]))
+            file.write("\n")
+            file.write("G")
+            file.write(str(optimizedLines[i][1][0]))
+            file.write(" X")
+            file.write(str(optimizedLines[i][1][1][0]))
+            file.write(" Y")
+            file.write(str(optimizedLines[i][1][1][1]))
+            file.write("\n")
+
+    file.close()
+
+
 def calculateDistance(x1,y1,x2,y2):
     dist = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
     return dist
@@ -13,35 +36,33 @@ def calculateDistance(x1,y1,x2,y2):
 def optimize(lines):
     current_x = 0
     current_y = 0
-    lineNumber = 0
-    tmpDistance = 30000
-    tmpShortest = []
-    distance = 0
-    for i in range(len(lines)):
+    while(len(lines) != 0):
+        lineNumberShortest = 0
+        tmpDistance = 30000
+        tmpShortest = []
+        distance = 0
+        for i in range(len(lines)):
 
-        x = int(lines[i][0][1][0])
-        y = int(lines[i][0][1][1])
+            x = int(lines[i][0][1][0])
+            y = int(lines[i][0][1][1])
 
-        distance = calculateDistance(current_x, current_y, x, y)
+            distance = calculateDistance(current_x, current_y, x, y)
 
-        if(distance < tmpDistance):
-            tmpDistance = distance
-            tmpShortest = lines[i]
-            lineNumber = i
+            if(distance < tmpDistance):
+                tmpDistance = distance
+                tmpShortest = lines[i]
+                lineNumberShortest = i
 
-    print(tmpDistance)
-    print(('0', [current_x, current_y]), tmpShortest[0])
+        current_x = int(tmpShortest[1][1][0])
+        current_y = int(tmpShortest[1][1][1])
 
-    if(distance == 0):
-        optimizedLines.append(tmpShortest)
-        lines.pop(lineNumber)
-    else:
-        optimizedLines.append( (('0', [current_x, current_y]), tmpShortest[0]) )
-        optimizedLines.append(tmpShortest)
-        lines.pop(lineNumber)
-
-    print(optimizedLines)
-
+        if(distance == 0):
+            optimizedLines.append(tmpShortest)
+            lines.pop(lineNumberShortest)
+        else:
+            optimizedLines.append( (('0', [current_x, current_y]), tmpShortest[0]) )
+            optimizedLines.append(tmpShortest)
+            lines.pop(lineNumberShortest)
 
 
 def getStartToEnd(coords):
@@ -95,3 +116,4 @@ def readGcode(filename):
 coords = readGcode("gcode.txt")
 lines = getStartToEnd(coords)
 optimize(lines)
+backToGcode()
