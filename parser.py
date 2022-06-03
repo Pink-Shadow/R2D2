@@ -18,10 +18,12 @@ def getStartToEnd(coords):
     listWithLines = []
     for x in range(len(coords) - 1):
         if coords[x + 1].G != 0:
+            coords[x].G = 1
             tmp.append(coords[x])
             tmp.append(coords[x + 1])
             listWithLines.append(copy.copy(tmp))
             tmp = []
+
     return listWithLines
 
 
