@@ -1,6 +1,4 @@
-import copy
 import math
-from re import I
 from gcode_parser import parse_gcode, getStartToEnd
 
 """! @file
