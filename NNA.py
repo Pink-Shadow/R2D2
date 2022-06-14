@@ -9,9 +9,12 @@ from gcode_parser import parse_gcode, getStartToEnd
 def toFile(data):
     with open("new_gcode.txt", 'w') as file:
         for i, line in enumerate(data):
+            # check if start en end are the same
+            if line[0].X == line[1].X and line[0].Y == line[1].Y:
+                continue
             if i == 0:
                 file.write(f"G0 X{line[0].X} Y{line[0].Y}\n")
-            if not (line[0].X == data[i-1][0].X and line[0].Y == data[i-1][0].Y):
+            elif not (line[0].X == data[i-1][1].X and line[0].Y == data[i-1][1].Y):
                 file.write(f"G0 X{line[0].X} Y{line[0].Y}\n")
             file.write(f"G1 X{line[1].X} Y{line[1].Y}\n")
 
@@ -23,8 +26,12 @@ def calculateDistance(x1, y1, x2, y2):
 def optimize(lines):
     new_lines = []
     current_loc = [0, 0]
-
+    
     l = len(lines)
+    
+    count_breaks=0
+    checks_skipped = 0
+    print(f"starts with {l} lines")
     while l > 0:
         shortest_line = None
         shortest_dist = float('inf')
@@ -33,13 +40,19 @@ def optimize(lines):
             if dist < shortest_dist:
                 shortest_dist = dist
                 shortest_line = i
-
+            if dist == 0:
+                count_breaks += 1
+                checks_skipped += l - i
+                break
         new_lines.append(lines[shortest_line])
-        print(shortest_line, len(lines))
+        if(len(lines)%500 == 0):
+            print(f"{len(lines)} lines left")
         current_loc = [lines[shortest_line][1].X, lines[shortest_line][1].Y]
         lines.pop(shortest_line)
         l -= 1
-    
+    print(f"{len(lines)} lines left")
+    print(f"{count_breaks} breaks")
+    print(f"{checks_skipped} checks skipped")
     return new_lines
 
 
