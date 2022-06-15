@@ -94,16 +94,16 @@ if __name__ == "__main__":
     objects = parse_gcode()
 
     iterations = 1
-    first_route = copy.deepcopy(objects)
-    shortest_route = first_route
-    shortest_dist = calculate_dist_route(first_route)
 
+    shortest_route = copy.deepcopy(objects)
+    shortest_dist = calculate_dist_route(shortest_route)
+
+    current_route = copy.deepcopy(shortest_route)
     # the chance of a random mutation happening per iteration
     mutation_chance = 0.1
 
     current_time = time.perf_counter()
     while time.perf_counter() - current_time < 60:
-        # indexes = random.sample(range(len(objects)), mutations*2)
 
         # get longest object distance in route
         longest_dist_step = 0
@@ -112,33 +112,37 @@ if __name__ == "__main__":
 
         second_longest_dist_step = 0
         second_longest_index = 0
-        second_longest_object_target = objects[second_longest_index]
-        for i in range(len(objects)-1):
-            dist = calculateDistance(objects[i].end[0], objects[i].end[1], objects[i+1].begin[0], objects[i+1].begin[1])
+        second_longest_object_target = current_route[second_longest_index]
+        for i in range(len(current_route)-1):
+            dist = calculateDistance(current_route[i].end[0], current_route[i].end[1], current_route[i+1].begin[0], current_route[i+1].begin[1])
             if dist > longest_dist_step:
                 longest_dist_step = dist
                 longest_index = i+1
-                longest_object_target = objects[i+1]
+                longest_object_target = current_route[i+1]
             elif dist > second_longest_dist_step:
                 second_longest_dist_step = dist
                 second_longest_index = i+1
-                second_longest_object_target = objects[i+1]
+                second_longest_object_target = current_route[i+1]
         
 
-        objects[longest_index], objects[second_longest_index] = objects[second_longest_index], objects[longest_index]
+        current_route[longest_index], current_route[second_longest_index] = current_route[second_longest_index], current_route[longest_index]
 
         if random.random() < mutation_chance:
-            random_1 = random.choice(range(len(objects)))
-            random_2 = random.choice(range(len(objects)))
-            objects[random_1], objects[random_2] = objects[random_2], objects[random_1]
+            random_1 = random.choice(range(len(current_route)))
+            random_2 = random.choice(range(len(current_route)))
+            current_route[random_1], current_route[random_2] = current_route[random_2], current_route[random_1]
 
-        dist = calculate_dist_route(objects)
+        dist = calculate_dist_route(current_route)
+        # print(calculate_dist_route(shortest_route))
         if shortest_dist == -1 or dist < shortest_dist:
             print(f"change to: {dist} from {shortest_dist}")
-            shortest_route = copy.deepcopy(objects)
+            shortest_route = copy.deepcopy(current_route)
             shortest_dist = dist
+        else:
+            current_route = shortest_route.copy()
         iterations += 1
 
+        print(calculate_dist_route(shortest_route))
     write_route_gcode_to_file(shortest_route)
     print(shortest_route)
     print(f"iterations: {iterations}")
