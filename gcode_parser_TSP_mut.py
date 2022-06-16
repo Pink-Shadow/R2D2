@@ -94,38 +94,18 @@ if __name__ == "__main__":
     objects = parse_gcode()
 
     iterations = 1
+    tries = 0
 
     shortest_route = copy.deepcopy(objects)
     shortest_dist = calculate_dist_route(shortest_route)
 
     current_route = copy.deepcopy(shortest_route)
     # the chance of a random mutation happening per iteration
-    mutation_chance = 0.1
+    mutation_chance = 1
 
     current_time = time.perf_counter()
     while time.perf_counter() - current_time < 60:
-
-        # get longest object distance in route
-        longest_dist_step = 0
-        longest_index = 0
-        longest_object_target = objects[longest_index]
-
-        second_longest_dist_step = 0
-        second_longest_index = 0
-        second_longest_object_target = current_route[second_longest_index]
-        for i in range(len(current_route)-1):
-            dist = calculateDistance(current_route[i].end[0], current_route[i].end[1], current_route[i+1].begin[0], current_route[i+1].begin[1])
-            if dist > longest_dist_step:
-                longest_dist_step = dist
-                longest_index = i+1
-                longest_object_target = current_route[i+1]
-            elif dist > second_longest_dist_step:
-                second_longest_dist_step = dist
-                second_longest_index = i+1
-                second_longest_object_target = current_route[i+1]
-        
-
-        current_route[longest_index], current_route[second_longest_index] = current_route[second_longest_index], current_route[longest_index]
+        tries += 1
 
         if random.random() < mutation_chance:
             random_1 = random.choice(range(len(current_route)))
@@ -136,13 +116,18 @@ if __name__ == "__main__":
         # print(calculate_dist_route(shortest_route))
         if shortest_dist == -1 or dist < shortest_dist:
             print(f"change to: {dist} from {shortest_dist}")
-            shortest_route = copy.deepcopy(current_route)
+            shortest_route = current_route.copy()
             shortest_dist = dist
+            tries = 0
+        
         else:
             current_route = shortest_route.copy()
+
+        if tries == 50:
+            random.shuffle(current_route)
         iterations += 1
 
-        print(calculate_dist_route(shortest_route))
+        # print(calculate_dist_route(shortest_route))
     write_route_gcode_to_file(shortest_route)
     print(shortest_route)
     print(f"iterations: {iterations}")
