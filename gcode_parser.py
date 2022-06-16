@@ -29,9 +29,9 @@ def getStartToEnd(coords):
     return listWithLines
 
 
-def parse_gcode():
+def parse_gcode(file_name):
     gcode = []
-    with open(f"gcode.txt", "r") as gcode_file:
+    with open(file_name, "r") as gcode_file:
         data = gcode_file.readlines()
         for line in data:
             tmp = gcode_class()
