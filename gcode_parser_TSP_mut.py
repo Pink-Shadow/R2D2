@@ -96,8 +96,13 @@ if __name__ == "__main__":
     iterations = 1
     tries = 0
 
+    
+
     shortest_route = copy.deepcopy(objects)
     shortest_dist = calculate_dist_route(shortest_route)
+
+    absolute_shortest_route = copy.deepcopy(shortest_route)
+    absolute_shortest_dist = calculate_dist_route(shortest_route)
 
     current_route = copy.deepcopy(shortest_route)
     # the chance of a random mutation happening per iteration
@@ -106,7 +111,6 @@ if __name__ == "__main__":
     current_time = time.perf_counter()
     while time.perf_counter() - current_time < 60:
         tries += 1
-
         if random.random() < mutation_chance:
             random_1 = random.choice(range(len(current_route)))
             random_2 = random.choice(range(len(current_route)))
@@ -115,19 +119,25 @@ if __name__ == "__main__":
         dist = calculate_dist_route(current_route)
         # print(calculate_dist_route(shortest_route))
         if shortest_dist == -1 or dist < shortest_dist:
-            print(f"change to: {dist} from {shortest_dist}")
+            # print(f"change to: {dist} from {shortest_dist}")
             shortest_route = current_route.copy()
             shortest_dist = dist
             tries = 0
-        
         else:
             current_route = shortest_route.copy()
 
-        if tries == 50:
-            random.shuffle(current_route)
+        if tries == 5000:
+            if shortest_dist < absolute_shortest_dist:
+                absolute_shortest_route = shortest_route.copy()
+                absolute_shortest_dist = shortest_dist
+
+            random.shuffle(shortest_route)
+            current_route = shortest_route.copy()
+            shortest_dist = calculate_dist_route(shortest_route)
+            tries = 0
+
         iterations += 1
 
-        # print(calculate_dist_route(shortest_route))
-    write_route_gcode_to_file(shortest_route)
-    print(shortest_route)
+    write_route_gcode_to_file(absolute_shortest_route)
+    print(absolute_shortest_dist)
     print(f"iterations: {iterations}")
