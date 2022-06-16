@@ -98,7 +98,7 @@ if __name__ == "__main__":
     shortest_dist = calculate_dist_route(first_route)
 
     current_time = time.perf_counter()
-    while time.perf_counter() - current_time < 120:
+    while time.perf_counter() - current_time < 60:
         random.shuffle(objects)
         dist = calculate_dist_route(objects)
         if shortest_dist == -1 or dist < shortest_dist:
