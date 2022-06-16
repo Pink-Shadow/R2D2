@@ -32,6 +32,10 @@ print("NNA done")
 
 # load txt files with gcode
 for file_name in os.listdir("./TSP"):
+    try:
+        os.mkdir("./TSP/" + file_name.strip(".txt"))
+    except FileExistsError:
+        pass
     tmp2 = 0
     for iteration in range(0, 1):
         tmp = subprocess.run(['CalculateSteps.exe', "./TSP/" + file_name], stdout=subprocess.PIPE)
@@ -45,6 +49,10 @@ print("TSP done")
 
 # load txt files with gcode and get gcode line count
 for file_name in os.listdir("./custom"):
+    try:
+        os.mkdir("./custom/" + file_name.strip(".txt"))
+    except FileExistsError:
+        pass
     tmp2 = 0
     for iteration in range(0, 1):
         tmp = subprocess.run(['CalculateSteps.exe', "./custom/" + file_name], stdout=subprocess.PIPE)
@@ -54,9 +62,7 @@ for file_name in os.listdir("./custom"):
         if i["file_name"] == file_name:
             i["custom"] = int(tmp2)
 
-print(listOfdict)
 listOfdict = sorted(listOfdict, key=lambda d: d['Gcode lines'])
-print(listOfdict)
 
 original = []
 for i in listOfdict:
