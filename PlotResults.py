@@ -1,10 +1,7 @@
 import subprocess
 import os
-import matplotlib
 import numpy as np
 import matplotlib.pyplot as plt
-
-numberOfImages = 14
 
 original = []
 # load txt files with gcode
@@ -36,7 +33,7 @@ print("TSP done")
 
 
 custom = []
-# load txt files with gcode
+# load txt files with gcode and get gcode line count
 for file_name in os.listdir("./custom"):
     tmp2 = 0
     for iteration in range(0,1):
