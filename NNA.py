@@ -57,10 +57,10 @@ def optimize(lines):
     print(f"{checks_skipped} checks skipped")
     return new_lines
 
-
-for file_name in os.listdir("./original"):
-    print(file_name)
-    coords = parse_gcode("./original/" + file_name)
-    lijnen = getStartToEnd(coords)
-    optimized = optimize(lijnen)
-    toFile(optimized, "./NNA/"+file_name)
+if __name__ == "__main__":
+    for file_name in os.listdir("./original"):
+        print(file_name)
+        coords = parse_gcode("./original/" + file_name)
+        lijnen = getStartToEnd(coords)
+        optimized = optimize(lijnen)
+        toFile(optimized, "./NNA/"+file_name)

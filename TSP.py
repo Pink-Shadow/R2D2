@@ -66,8 +66,8 @@ def parse_gcode():
     return objects
 
 
-def write_route_gcode_to_file(route):
-    with open(f"route.txt", "w") as gcode:
+def write_route_gcode_to_file(route, filename):
+    with open(filename, "w") as gcode:
         for object in route:
             code = object.get_gcode()
             for line in code:
@@ -89,7 +89,7 @@ def calculate_dist_route(route):
     return dist
     
 
-if __name__ == "__main__":
+def run(objects):
     objects = parse_gcode()
 
     iterations = 1
@@ -106,7 +106,8 @@ if __name__ == "__main__":
             shortest_route = copy.deepcopy(objects)
             shortest_dist = dist
         iterations += 1
+    return shortest_route, shortest_dist, iterations
+    
 
-    write_route_gcode_to_file(shortest_route)
-    print(shortest_route)
-    print(f"iterations: {iterations}")
+if __name__ == "__main__":
+    run() 
