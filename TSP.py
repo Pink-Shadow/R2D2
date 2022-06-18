@@ -90,24 +90,20 @@ def calculate_dist_route(route):
     
 
 def run(objects):
-    objects = parse_gcode()
 
     iterations = 1
-    first_route = copy.deepcopy(objects)
-    shortest_route = first_route
-    shortest_dist = calculate_dist_route(first_route)
+    current_route = copy.deepcopy(objects)
+    shortest_route = copy.deepcopy(current_route)
+    shortest_dist = calculate_dist_route(shortest_route)
 
     current_time = time.perf_counter()
     while time.perf_counter() - current_time < 60:
-        random.shuffle(objects)
-        dist = calculate_dist_route(objects)
+        random.shuffle(current_route)
+        dist = calculate_dist_route(current_route)
         if shortest_dist == -1 or dist < shortest_dist:
             print(f"change to: {dist} from {shortest_dist}")
-            shortest_route = copy.deepcopy(objects)
+            shortest_route = copy.deepcopy(current_route)
             shortest_dist = dist
         iterations += 1
     return shortest_route, shortest_dist, iterations
     
-
-if __name__ == "__main__":
-    run() 
