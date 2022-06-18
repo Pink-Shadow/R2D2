@@ -98,6 +98,8 @@ def run(objects):
 
     current_time = time.perf_counter()
     t = time.perf_counter()
+    #dirty flag variable
+    dirty = 0
     while t - current_time < 60:
         random.shuffle(current_route)
         dist = calculate_dist_route(current_route)
@@ -108,8 +110,9 @@ def run(objects):
         t = time.perf_counter()
     
         perc = ((int(t) - int(current_time)) / 60) *100
-        if (perc % 10 == 0) and (perc!=0):
+        if (perc % 10 == 0) and (perc!=dirty):
             print(f"progress: {perc}")
+            dirty+=10
 
     return shortest_route, shortest_dist, iterations
     

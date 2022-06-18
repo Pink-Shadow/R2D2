@@ -106,6 +106,8 @@ def run(objects):
 
     current_time = time.perf_counter()
     t = time.perf_counter()
+    #dirty flag variable
+    dirty = 0
     while t - current_time < 60:
         tries += 1
         if random.random() < mutation_chance:
@@ -135,7 +137,8 @@ def run(objects):
         t = time.perf_counter()
 
         perc = ((int(t) - int(current_time)) / 60) *100
-        if (perc % 10 == 0) and (perc!=0):
+        if (perc % 10 == 0) and (perc!=dirty):
             print(f"progress: {perc}")
+            dirty+=10
 
     return absolute_shortest_route, absolute_shortest_dist, iterations
