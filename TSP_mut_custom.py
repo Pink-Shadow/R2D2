@@ -27,10 +27,10 @@ class DrawObject:
         return gcode
         
 
-def parse_gcode():
+def parse_gcode(filename):
     objects = []
     id = 1
-    with open(f"gcode.txt", "r") as gcode:
+    with open(filename, "r") as gcode:
         data = gcode.readlines()
         tmp = DrawObject(id)
         for i, line in enumerate(data):
