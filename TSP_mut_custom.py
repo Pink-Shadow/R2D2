@@ -135,7 +135,7 @@ def run(objects):
         t = time.perf_counter()
 
         perc = ((int(t) - int(current_time)) / 60) *100
-        if perc % 10 == 0:
+        if (perc % 10 == 0) and (perc!=0):
             print(f"progress: {perc}")
 
     return absolute_shortest_route, absolute_shortest_dist, iterations
