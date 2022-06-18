@@ -97,13 +97,19 @@ def run(objects):
     shortest_dist = calculate_dist_route(shortest_route)
 
     current_time = time.perf_counter()
-    while time.perf_counter() - current_time < 60:
+    t = time.perf_counter()
+    while t - current_time < 60:
         random.shuffle(current_route)
         dist = calculate_dist_route(current_route)
         if shortest_dist == -1 or dist < shortest_dist:
-            print(f"change to: {dist} from {shortest_dist}")
             shortest_route = copy.deepcopy(current_route)
             shortest_dist = dist
         iterations += 1
+        t = time.perf_counter()
+    
+        perc = ((t - current_time) / 60) *100
+        if perc % 10 == 0:
+            print(f"progress: {perc}")
+
     return shortest_route, shortest_dist, iterations
     

@@ -6,7 +6,8 @@ for i in range(1, 21):
         os.mkdir("./TSP_MUT/B/round_" + str(i))
     except FileExistsError:
         pass
-
+    
+    print(f"ROUND {i} TSP_MUT B")
     for file_name in os.listdir("./original")[len(os.listdir("./original"))//2:]:
         print(f"file: {file_name}'s {i}'th time")
         coords = TSP.parse_gcode("./original/" + file_name)

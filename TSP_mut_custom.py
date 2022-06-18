@@ -105,7 +105,8 @@ def run(objects):
     mutation_chance = 1
 
     current_time = time.perf_counter()
-    while time.perf_counter() - current_time < 60:
+    t = time.perf_counter()
+    while t - current_time < 60:
         tries += 1
         if random.random() < mutation_chance:
             random_1 = random.choice(range(len(current_route)))
@@ -113,9 +114,7 @@ def run(objects):
             current_route[random_1], current_route[random_2] = current_route[random_2], current_route[random_1]
 
         dist = calculate_dist_route(current_route)
-        # print(calculate_dist_route(shortest_route))
         if shortest_dist == -1 or dist < shortest_dist:
-            # print(f"change to: {dist} from {shortest_dist}")
             shortest_route = current_route.copy()
             shortest_dist = dist
             tries = 0
@@ -133,5 +132,10 @@ def run(objects):
             tries = 0
 
         iterations += 1
+        t = time.perf_counter()
+
+        perc = ((t - current_time) / 60) *100
+        if perc % 10 == 0:
+            print(f"progress: {perc}")
 
     return absolute_shortest_route, absolute_shortest_dist, iterations
