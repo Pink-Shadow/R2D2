@@ -134,7 +134,7 @@ def run(objects):
         iterations += 1
         t = time.perf_counter()
 
-        perc = ((t - current_time) / 60) *100
+        perc = ((int(t) - int(current_time)) / 60) *100
         if perc % 10 == 0:
             print(f"progress: {perc}")
 
