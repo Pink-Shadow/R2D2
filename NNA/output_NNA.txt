@@ -11,5 +11,4 @@ mondiriaan_2.txt 2356085
 mondiriaan_3.txt 1878909
 mondiriaan_4.txt 4309094
 mondiriaan_5.txt 2520273
-output_NNA.txt 0
 pug.txt 4492966
