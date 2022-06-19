@@ -10,7 +10,7 @@ import subprocess
 print(os.getcwd())
 
 #open txtfile
-outputfile = open("output_TSPMUT.txt", "w")
+outputfile = open("output_TSPRES.txt", "w")
 for directory  in os.listdir(os.getcwd()):
 #check if file is directory
     if os.path.isdir(directory):
