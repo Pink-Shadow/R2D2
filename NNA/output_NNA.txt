@@ -1,0 +1,15 @@
+aston.txt 1381815
+cat.txt 3486323
+dog.txt 5048997
+elephant.txt 4269492
+f1.txt 2039026
+ferrari.txt 1623075
+lambo.txt 1747626
+leeuw.txt 7079453
+mondiriaan_1.txt 480733
+mondiriaan_2.txt 2356085
+mondiriaan_3.txt 1878909
+mondiriaan_4.txt 4309094
+mondiriaan_5.txt 2520273
+output_NNA.txt 0
+pug.txt 4492966
