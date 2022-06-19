@@ -1,280 +1,280 @@
-aston\aston_10_tspmut.txt1614567
-aston\aston_11_tspmut.txt1612423
-aston\aston_12_tspmut.txt1602863
-aston\aston_13_tspmut.txt1620142
-aston\aston_14_tspmut.txt1623166
-aston\aston_15_tspmut.txt1613194
-aston\aston_16_tspmut.txt1630646
-aston\aston_17_tspmut.txt1634625
-aston\aston_18_tspmut.txt1614810
-aston\aston_19_tspmut.txt1605457
-aston\aston_1_tspmut.txt1599947
-aston\aston_20_tspmut.txt1646384
-aston\aston_2_tspmut.txt1632569
-aston\aston_3_tspmut.txt1635053
-aston\aston_4_tspmut.txt1625972
-aston\aston_5_tspmut.txt1597777
-aston\aston_6_tspmut.txt1630403
-aston\aston_7_tspmut.txt1607999
-aston\aston_8_tspmut.txt1609088
-aston\aston_9_tspmut.txt1623215
-cat\cat_10_tspmut.txt5394786
-cat\cat_11_tspmut.txt5394786
-cat\cat_12_tspmut.txt5394786
-cat\cat_13_tspmut.txt5394786
-cat\cat_14_tspmut.txt5394786
-cat\cat_15_tspmut.txt5394786
-cat\cat_16_tspmut.txt5394786
-cat\cat_17_tspmut.txt5394786
-cat\cat_18_tspmut.txt5394786
-cat\cat_19_tspmut.txt5394786
-cat\cat_1_tspmut.txt5394786
-cat\cat_20_tspmut.txt5394786
-cat\cat_2_tspmut.txt5394786
-cat\cat_3_tspmut.txt5394786
-cat\cat_4_tspmut.txt5394786
-cat\cat_5_tspmut.txt5394786
-cat\cat_6_tspmut.txt5394786
-cat\cat_7_tspmut.txt5394786
-cat\cat_8_tspmut.txt5394786
-cat\cat_9_tspmut.txt5394786
-dog\dog_10_tspmut.txt7465821
-dog\dog_11_tspmut.txt7465821
-dog\dog_12_tspmut.txt7465821
-dog\dog_13_tspmut.txt7465821
-dog\dog_14_tspmut.txt7465821
-dog\dog_15_tspmut.txt7465821
-dog\dog_16_tspmut.txt7465821
-dog\dog_17_tspmut.txt7465821
-dog\dog_18_tspmut.txt7465821
-dog\dog_19_tspmut.txt7465821
-dog\dog_1_tspmut.txt7465821
-dog\dog_20_tspmut.txt7465821
-dog\dog_2_tspmut.txt7465821
-dog\dog_3_tspmut.txt7465821
-dog\dog_4_tspmut.txt7465821
-dog\dog_5_tspmut.txt7465821
-dog\dog_6_tspmut.txt7465821
-dog\dog_7_tspmut.txt7465821
-dog\dog_8_tspmut.txt7465821
-dog\dog_9_tspmut.txt7465821
-elephant\elephant_10_tspmut.txt8002149
-elephant\elephant_11_tspmut.txt8002149
-elephant\elephant_12_tspmut.txt8002149
-elephant\elephant_13_tspmut.txt8002149
-elephant\elephant_14_tspmut.txt8002149
-elephant\elephant_15_tspmut.txt8002149
-elephant\elephant_16_tspmut.txt8002149
-elephant\elephant_17_tspmut.txt8002149
-elephant\elephant_18_tspmut.txt8002149
-elephant\elephant_19_tspmut.txt8002149
-elephant\elephant_1_tspmut.txt8002149
-elephant\elephant_20_tspmut.txt8002149
-elephant\elephant_2_tspmut.txt8002149
-elephant\elephant_3_tspmut.txt8002149
-elephant\elephant_4_tspmut.txt8002149
-elephant\elephant_5_tspmut.txt8002149
-elephant\elephant_6_tspmut.txt8002149
-elephant\elephant_7_tspmut.txt8002149
-elephant\elephant_8_tspmut.txt8002149
-elephant\elephant_9_tspmut.txt8002149
-f1\f1_10_tspmut.txt2634057
-f1\f1_11_tspmut.txt2634057
-f1\f1_12_tspmut.txt2634057
-f1\f1_13_tspmut.txt2634057
-f1\f1_14_tspmut.txt2634057
-f1\f1_15_tspmut.txt2634057
-f1\f1_16_tspmut.txt2634057
-f1\f1_17_tspmut.txt2634057
-f1\f1_18_tspmut.txt2634057
-f1\f1_19_tspmut.txt2634057
-f1\f1_1_tspmut.txt2634057
-f1\f1_20_tspmut.txt2634057
-f1\f1_2_tspmut.txt2634057
-f1\f1_3_tspmut.txt2634057
-f1\f1_4_tspmut.txt2634057
-f1\f1_5_tspmut.txt2634057
-f1\f1_6_tspmut.txt2634057
-f1\f1_7_tspmut.txt2634057
-f1\f1_8_tspmut.txt2634057
-f1\f1_9_tspmut.txt2634057
-ferrari\ferrari_10_tspmut.txt1813535
-ferrari\ferrari_11_tspmut.txt1781535
-ferrari\ferrari_12_tspmut.txt1781953
-ferrari\ferrari_13_tspmut.txt1802526
-ferrari\ferrari_14_tspmut.txt1787459
-ferrari\ferrari_15_tspmut.txt1756830
-ferrari\ferrari_16_tspmut.txt1805157
-ferrari\ferrari_17_tspmut.txt1756578
-ferrari\ferrari_18_tspmut.txt1794927
-ferrari\ferrari_19_tspmut.txt1749239
-ferrari\ferrari_1_tspmut.txt1757411
-ferrari\ferrari_20_tspmut.txt1815666
-ferrari\ferrari_2_tspmut.txt1786516
-ferrari\ferrari_3_tspmut.txt1787318
-ferrari\ferrari_4_tspmut.txt1751753
-ferrari\ferrari_5_tspmut.txt1786828
-ferrari\ferrari_6_tspmut.txt1809100
-ferrari\ferrari_7_tspmut.txt1764922
-ferrari\ferrari_8_tspmut.txt1815943
-ferrari\ferrari_9_tspmut.txt1801144
-lambo\lambo_10_tspmut.txt1932153
-lambo\lambo_11_tspmut.txt1953825
-lambo\lambo_12_tspmut.txt1923671
-lambo\lambo_13_tspmut.txt1900804
-lambo\lambo_14_tspmut.txt1913016
-lambo\lambo_15_tspmut.txt1908939
-lambo\lambo_16_tspmut.txt1926571
-lambo\lambo_17_tspmut.txt1954941
-lambo\lambo_18_tspmut.txt1922007
-lambo\lambo_19_tspmut.txt1913451
-lambo\lambo_1_tspmut.txt1912346
-lambo\lambo_20_tspmut.txt1887170
-lambo\lambo_2_tspmut.txt1923989
-lambo\lambo_3_tspmut.txt1924900
-lambo\lambo_4_tspmut.txt1927352
-lambo\lambo_5_tspmut.txt1923395
-lambo\lambo_6_tspmut.txt1949625
-lambo\lambo_7_tspmut.txt1919775
-lambo\lambo_8_tspmut.txt1899310
-lambo\lambo_9_tspmut.txt1944073
-leeuw\leeuw_10_tspmut.txt12266595
-leeuw\leeuw_11_tspmut.txt12266595
-leeuw\leeuw_12_tspmut.txt12266595
-leeuw\leeuw_13_tspmut.txt12266595
-leeuw\leeuw_14_tspmut.txt12266595
-leeuw\leeuw_15_tspmut.txt12266595
-leeuw\leeuw_16_tspmut.txt12266595
-leeuw\leeuw_17_tspmut.txt12266595
-leeuw\leeuw_18_tspmut.txt12266595
-leeuw\leeuw_19_tspmut.txt12266595
-leeuw\leeuw_1_tspmut.txt12266595
-leeuw\leeuw_20_tspmut.txt12266595
-leeuw\leeuw_2_tspmut.txt12266595
-leeuw\leeuw_3_tspmut.txt12266595
-leeuw\leeuw_4_tspmut.txt12266595
-leeuw\leeuw_5_tspmut.txt12266595
-leeuw\leeuw_6_tspmut.txt12266595
-leeuw\leeuw_7_tspmut.txt12266595
-leeuw\leeuw_8_tspmut.txt12266595
-leeuw\leeuw_9_tspmut.txt12266595
-mondriaan_1\mondiriaan_1_10_tspmut.txt486615
-mondriaan_1\mondiriaan_1_11_tspmut.txt485488
-mondriaan_1\mondiriaan_1_12_tspmut.txt496035
-mondriaan_1\mondiriaan_1_13_tspmut.txt493330
-mondriaan_1\mondiriaan_1_14_tspmut.txt496425
-mondriaan_1\mondiriaan_1_15_tspmut.txt495544
-mondriaan_1\mondiriaan_1_16_tspmut.txt488351
-mondriaan_1\mondiriaan_1_17_tspmut.txt498214
-mondriaan_1\mondiriaan_1_18_tspmut.txt488542
-mondriaan_1\mondiriaan_1_19_tspmut.txt496521
-mondriaan_1\mondiriaan_1_1_tspmut.txt504591
-mondriaan_1\mondiriaan_1_20_tspmut.txt498839
-mondriaan_1\mondiriaan_1_2_tspmut.txt488838
-mondriaan_1\mondiriaan_1_3_tspmut.txt490864
-mondriaan_1\mondiriaan_1_4_tspmut.txt494685
-mondriaan_1\mondiriaan_1_5_tspmut.txt497652
-mondriaan_1\mondiriaan_1_6_tspmut.txt491990
-mondriaan_1\mondiriaan_1_7_tspmut.txt499308
-mondriaan_1\mondiriaan_1_8_tspmut.txt493795
-mondriaan_1\mondiriaan_1_9_tspmut.txt496245
-mondriaan_2\mondiriaan_2_10_tspmut.txt3090007
-mondriaan_2\mondiriaan_2_11_tspmut.txt3090007
-mondriaan_2\mondiriaan_2_12_tspmut.txt2847126
-mondriaan_2\mondiriaan_2_13_tspmut.txt2842307
-mondriaan_2\mondiriaan_2_14_tspmut.txt2787969
-mondriaan_2\mondiriaan_2_15_tspmut.txt2842907
-mondriaan_2\mondiriaan_2_16_tspmut.txt2831115
-mondriaan_2\mondiriaan_2_17_tspmut.txt2849347
-mondriaan_2\mondiriaan_2_18_tspmut.txt2847788
-mondriaan_2\mondiriaan_2_19_tspmut.txt3090007
-mondriaan_2\mondiriaan_2_1_tspmut.txt2817815
-mondriaan_2\mondiriaan_2_20_tspmut.txt2833126
-mondriaan_2\mondiriaan_2_2_tspmut.txt2843138
-mondriaan_2\mondiriaan_2_3_tspmut.txt2870619
-mondriaan_2\mondiriaan_2_4_tspmut.txt2836010
-mondriaan_2\mondiriaan_2_5_tspmut.txt3090007
-mondriaan_2\mondiriaan_2_6_tspmut.txt2855043
-mondriaan_2\mondiriaan_2_7_tspmut.txt2820145
-mondriaan_2\mondiriaan_2_8_tspmut.txt3090007
-mondriaan_2\mondiriaan_2_9_tspmut.txt2815804
-mondriaan_3\mondiriaan_3_10_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_11_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_12_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_13_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_14_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_15_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_16_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_17_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_18_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_19_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_1_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_20_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_2_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_3_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_4_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_5_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_6_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_7_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_8_tspmut.txt3504922
-mondriaan_3\mondiriaan_3_9_tspmut.txt3504922
-mondriaan_4\mondiriaan_4_10_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_11_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_12_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_13_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_14_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_15_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_16_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_17_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_18_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_19_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_1_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_20_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_2_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_3_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_4_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_5_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_6_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_7_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_8_tspmut.txt9162759
-mondriaan_4\mondiriaan_4_9_tspmut.txt9162759
-mondriaan_5\mondiriaan_5_10_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_11_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_12_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_13_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_14_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_15_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_16_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_17_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_18_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_19_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_1_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_20_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_2_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_3_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_4_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_5_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_6_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_7_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_8_tspmut.txt5869070
-mondriaan_5\mondiriaan_5_9_tspmut.txt5869070
-pug\pug_10_tspmut.txt7980221
-pug\pug_11_tspmut.txt7980221
-pug\pug_12_tspmut.txt7980221
-pug\pug_13_tspmut.txt7980221
-pug\pug_14_tspmut.txt7980221
-pug\pug_15_tspmut.txt7980221
-pug\pug_16_tspmut.txt7980221
-pug\pug_17_tspmut.txt7980221
-pug\pug_18_tspmut.txt7980221
-pug\pug_19_tspmut.txt7980221
-pug\pug_1_tspmut.txt7980221
-pug\pug_20_tspmut.txt7980221
-pug\pug_2_tspmut.txt7980221
-pug\pug_3_tspmut.txt7980221
-pug\pug_4_tspmut.txt7980221
-pug\pug_5_tspmut.txt7980221
-pug\pug_6_tspmut.txt7980221
-pug\pug_7_tspmut.txt7980221
-pug\pug_8_tspmut.txt7980221
-pug\pug_9_tspmut.txt7980221
+aston\aston_10_tspmut.txt 1614567
+aston\aston_11_tspmut.txt 1612423
+aston\aston_12_tspmut.txt 1602863
+aston\aston_13_tspmut.txt 1620142
+aston\aston_14_tspmut.txt 1623166
+aston\aston_15_tspmut.txt 1613194
+aston\aston_16_tspmut.txt 1630646
+aston\aston_17_tspmut.txt 1634625
+aston\aston_18_tspmut.txt 1614810
+aston\aston_19_tspmut.txt 1605457
+aston\aston_1_tspmut.txt 1599947
+aston\aston_20_tspmut.txt 1646384
+aston\aston_2_tspmut.txt 1632569
+aston\aston_3_tspmut.txt 1635053
+aston\aston_4_tspmut.txt 1625972
+aston\aston_5_tspmut.txt 1597777
+aston\aston_6_tspmut.txt 1630403
+aston\aston_7_tspmut.txt 1607999
+aston\aston_8_tspmut.txt 1609088
+aston\aston_9_tspmut.txt 1623215
+cat\cat_10_tspmut.txt 5394786
+cat\cat_11_tspmut.txt 5394786
+cat\cat_12_tspmut.txt 5394786
+cat\cat_13_tspmut.txt 5394786
+cat\cat_14_tspmut.txt 5394786
+cat\cat_15_tspmut.txt 5394786
+cat\cat_16_tspmut.txt 5394786
+cat\cat_17_tspmut.txt 5394786
+cat\cat_18_tspmut.txt 5394786
+cat\cat_19_tspmut.txt 5394786
+cat\cat_1_tspmut.txt 5394786
+cat\cat_20_tspmut.txt 5394786
+cat\cat_2_tspmut.txt 5394786
+cat\cat_3_tspmut.txt 5394786
+cat\cat_4_tspmut.txt 5394786
+cat\cat_5_tspmut.txt 5394786
+cat\cat_6_tspmut.txt 5394786
+cat\cat_7_tspmut.txt 5394786
+cat\cat_8_tspmut.txt 5394786
+cat\cat_9_tspmut.txt 5394786
+dog\dog_10_tspmut.txt 7465821
+dog\dog_11_tspmut.txt 7465821
+dog\dog_12_tspmut.txt 7465821
+dog\dog_13_tspmut.txt 7465821
+dog\dog_14_tspmut.txt 7465821
+dog\dog_15_tspmut.txt 7465821
+dog\dog_16_tspmut.txt 7465821
+dog\dog_17_tspmut.txt 7465821
+dog\dog_18_tspmut.txt 7465821
+dog\dog_19_tspmut.txt 7465821
+dog\dog_1_tspmut.txt 7465821
+dog\dog_20_tspmut.txt 7465821
+dog\dog_2_tspmut.txt 7465821
+dog\dog_3_tspmut.txt 7465821
+dog\dog_4_tspmut.txt 7465821
+dog\dog_5_tspmut.txt 7465821
+dog\dog_6_tspmut.txt 7465821
+dog\dog_7_tspmut.txt 7465821
+dog\dog_8_tspmut.txt 7465821
+dog\dog_9_tspmut.txt 7465821
+elephant\elephant_10_tspmut.txt 8002149
+elephant\elephant_11_tspmut.txt 8002149
+elephant\elephant_12_tspmut.txt 8002149
+elephant\elephant_13_tspmut.txt 8002149
+elephant\elephant_14_tspmut.txt 8002149
+elephant\elephant_15_tspmut.txt 8002149
+elephant\elephant_16_tspmut.txt 8002149
+elephant\elephant_17_tspmut.txt 8002149
+elephant\elephant_18_tspmut.txt 8002149
+elephant\elephant_19_tspmut.txt 8002149
+elephant\elephant_1_tspmut.txt 8002149
+elephant\elephant_20_tspmut.txt 8002149
+elephant\elephant_2_tspmut.txt 8002149
+elephant\elephant_3_tspmut.txt 8002149
+elephant\elephant_4_tspmut.txt 8002149
+elephant\elephant_5_tspmut.txt 8002149
+elephant\elephant_6_tspmut.txt 8002149
+elephant\elephant_7_tspmut.txt 8002149
+elephant\elephant_8_tspmut.txt 8002149
+elephant\elephant_9_tspmut.txt 8002149
+f1\f1_10_tspmut.txt 2634057
+f1\f1_11_tspmut.txt 2634057
+f1\f1_12_tspmut.txt 2634057
+f1\f1_13_tspmut.txt 2634057
+f1\f1_14_tspmut.txt 2634057
+f1\f1_15_tspmut.txt 2634057
+f1\f1_16_tspmut.txt 2634057
+f1\f1_17_tspmut.txt 2634057
+f1\f1_18_tspmut.txt 2634057
+f1\f1_19_tspmut.txt 2634057
+f1\f1_1_tspmut.txt 2634057
+f1\f1_20_tspmut.txt 2634057
+f1\f1_2_tspmut.txt 2634057
+f1\f1_3_tspmut.txt 2634057
+f1\f1_4_tspmut.txt 2634057
+f1\f1_5_tspmut.txt 2634057
+f1\f1_6_tspmut.txt 2634057
+f1\f1_7_tspmut.txt 2634057
+f1\f1_8_tspmut.txt 2634057
+f1\f1_9_tspmut.txt 2634057
+ferrari\ferrari_10_tspmut.txt 1813535
+ferrari\ferrari_11_tspmut.txt 1781535
+ferrari\ferrari_12_tspmut.txt 1781953
+ferrari\ferrari_13_tspmut.txt 1802526
+ferrari\ferrari_14_tspmut.txt 1787459
+ferrari\ferrari_15_tspmut.txt 1756830
+ferrari\ferrari_16_tspmut.txt 1805157
+ferrari\ferrari_17_tspmut.txt 1756578
+ferrari\ferrari_18_tspmut.txt 1794927
+ferrari\ferrari_19_tspmut.txt 1749239
+ferrari\ferrari_1_tspmut.txt 1757411
+ferrari\ferrari_20_tspmut.txt 1815666
+ferrari\ferrari_2_tspmut.txt 1786516
+ferrari\ferrari_3_tspmut.txt 1787318
+ferrari\ferrari_4_tspmut.txt 1751753
+ferrari\ferrari_5_tspmut.txt 1786828
+ferrari\ferrari_6_tspmut.txt 1809100
+ferrari\ferrari_7_tspmut.txt 1764922
+ferrari\ferrari_8_tspmut.txt 1815943
+ferrari\ferrari_9_tspmut.txt 1801144
+lambo\lambo_10_tspmut.txt 1932153
+lambo\lambo_11_tspmut.txt 1953825
+lambo\lambo_12_tspmut.txt 1923671
+lambo\lambo_13_tspmut.txt 1900804
+lambo\lambo_14_tspmut.txt 1913016
+lambo\lambo_15_tspmut.txt 1908939
+lambo\lambo_16_tspmut.txt 1926571
+lambo\lambo_17_tspmut.txt 1954941
+lambo\lambo_18_tspmut.txt 1922007
+lambo\lambo_19_tspmut.txt 1913451
+lambo\lambo_1_tspmut.txt 1912346
+lambo\lambo_20_tspmut.txt 1887170
+lambo\lambo_2_tspmut.txt 1923989
+lambo\lambo_3_tspmut.txt 1924900
+lambo\lambo_4_tspmut.txt 1927352
+lambo\lambo_5_tspmut.txt 1923395
+lambo\lambo_6_tspmut.txt 1949625
+lambo\lambo_7_tspmut.txt 1919775
+lambo\lambo_8_tspmut.txt 1899310
+lambo\lambo_9_tspmut.txt 1944073
+leeuw\leeuw_10_tspmut.txt 12266595
+leeuw\leeuw_11_tspmut.txt 12266595
+leeuw\leeuw_12_tspmut.txt 12266595
+leeuw\leeuw_13_tspmut.txt 12266595
+leeuw\leeuw_14_tspmut.txt 12266595
+leeuw\leeuw_15_tspmut.txt 12266595
+leeuw\leeuw_16_tspmut.txt 12266595
+leeuw\leeuw_17_tspmut.txt 12266595
+leeuw\leeuw_18_tspmut.txt 12266595
+leeuw\leeuw_19_tspmut.txt 12266595
+leeuw\leeuw_1_tspmut.txt 12266595
+leeuw\leeuw_20_tspmut.txt 12266595
+leeuw\leeuw_2_tspmut.txt 12266595
+leeuw\leeuw_3_tspmut.txt 12266595
+leeuw\leeuw_4_tspmut.txt 12266595
+leeuw\leeuw_5_tspmut.txt 12266595
+leeuw\leeuw_6_tspmut.txt 12266595
+leeuw\leeuw_7_tspmut.txt 12266595
+leeuw\leeuw_8_tspmut.txt 12266595
+leeuw\leeuw_9_tspmut.txt 12266595
+mondriaan_1\mondiriaan_1_10_tspmut.txt 486615
+mondriaan_1\mondiriaan_1_11_tspmut.txt 485488
+mondriaan_1\mondiriaan_1_12_tspmut.txt 496035
+mondriaan_1\mondiriaan_1_13_tspmut.txt 493330
+mondriaan_1\mondiriaan_1_14_tspmut.txt 496425
+mondriaan_1\mondiriaan_1_15_tspmut.txt 495544
+mondriaan_1\mondiriaan_1_16_tspmut.txt 488351
+mondriaan_1\mondiriaan_1_17_tspmut.txt 498214
+mondriaan_1\mondiriaan_1_18_tspmut.txt 488542
+mondriaan_1\mondiriaan_1_19_tspmut.txt 496521
+mondriaan_1\mondiriaan_1_1_tspmut.txt 504591
+mondriaan_1\mondiriaan_1_20_tspmut.txt 498839
+mondriaan_1\mondiriaan_1_2_tspmut.txt 488838
+mondriaan_1\mondiriaan_1_3_tspmut.txt 490864
+mondriaan_1\mondiriaan_1_4_tspmut.txt 494685
+mondriaan_1\mondiriaan_1_5_tspmut.txt 497652
+mondriaan_1\mondiriaan_1_6_tspmut.txt 491990
+mondriaan_1\mondiriaan_1_7_tspmut.txt 499308
+mondriaan_1\mondiriaan_1_8_tspmut.txt 493795
+mondriaan_1\mondiriaan_1_9_tspmut.txt 496245
+mondriaan_2\mondiriaan_2_10_tspmut.txt 3090007
+mondriaan_2\mondiriaan_2_11_tspmut.txt 3090007
+mondriaan_2\mondiriaan_2_12_tspmut.txt 2847126
+mondriaan_2\mondiriaan_2_13_tspmut.txt 2842307
+mondriaan_2\mondiriaan_2_14_tspmut.txt 2787969
+mondriaan_2\mondiriaan_2_15_tspmut.txt 2842907
+mondriaan_2\mondiriaan_2_16_tspmut.txt 2831115
+mondriaan_2\mondiriaan_2_17_tspmut.txt 2849347
+mondriaan_2\mondiriaan_2_18_tspmut.txt 2847788
+mondriaan_2\mondiriaan_2_19_tspmut.txt 3090007
+mondriaan_2\mondiriaan_2_1_tspmut.txt 2817815
+mondriaan_2\mondiriaan_2_20_tspmut.txt 2833126
+mondriaan_2\mondiriaan_2_2_tspmut.txt 2843138
+mondriaan_2\mondiriaan_2_3_tspmut.txt 2870619
+mondriaan_2\mondiriaan_2_4_tspmut.txt 2836010
+mondriaan_2\mondiriaan_2_5_tspmut.txt 3090007
+mondriaan_2\mondiriaan_2_6_tspmut.txt 2855043
+mondriaan_2\mondiriaan_2_7_tspmut.txt 2820145
+mondriaan_2\mondiriaan_2_8_tspmut.txt 3090007
+mondriaan_2\mondiriaan_2_9_tspmut.txt 2815804
+mondriaan_3\mondiriaan_3_10_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_11_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_12_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_13_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_14_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_15_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_16_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_17_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_18_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_19_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_1_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_20_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_2_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_3_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_4_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_5_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_6_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_7_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_8_tspmut.txt 3504922
+mondriaan_3\mondiriaan_3_9_tspmut.txt 3504922
+mondriaan_4\mondiriaan_4_10_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_11_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_12_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_13_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_14_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_15_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_16_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_17_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_18_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_19_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_1_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_20_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_2_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_3_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_4_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_5_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_6_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_7_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_8_tspmut.txt 9162759
+mondriaan_4\mondiriaan_4_9_tspmut.txt 9162759
+mondriaan_5\mondiriaan_5_10_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_11_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_12_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_13_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_14_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_15_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_16_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_17_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_18_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_19_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_1_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_20_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_2_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_3_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_4_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_5_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_6_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_7_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_8_tspmut.txt 5869070
+mondriaan_5\mondiriaan_5_9_tspmut.txt 5869070
+pug\pug_10_tspmut.txt 7980221
+pug\pug_11_tspmut.txt 7980221
+pug\pug_12_tspmut.txt 7980221
+pug\pug_13_tspmut.txt 7980221
+pug\pug_14_tspmut.txt 7980221
+pug\pug_15_tspmut.txt 7980221
+pug\pug_16_tspmut.txt 7980221
+pug\pug_17_tspmut.txt 7980221
+pug\pug_18_tspmut.txt 7980221
+pug\pug_19_tspmut.txt 7980221
+pug\pug_1_tspmut.txt 7980221
+pug\pug_20_tspmut.txt 7980221
+pug\pug_2_tspmut.txt 7980221
+pug\pug_3_tspmut.txt 7980221
+pug\pug_4_tspmut.txt 7980221
+pug\pug_5_tspmut.txt 7980221
+pug\pug_6_tspmut.txt 7980221
+pug\pug_7_tspmut.txt 7980221
+pug\pug_8_tspmut.txt 7980221
+pug\pug_9_tspmut.txt 7980221

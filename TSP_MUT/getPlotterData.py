@@ -14,11 +14,12 @@ outputfile = open("output_TSPMUT.txt", "w")
 for directory  in os.listdir(os.getcwd()):
 #check if file is directory
     if os.path.isdir(directory):
+        print(directory)
         for filename in os.listdir(directory):
             if filename.endswith(".txt"):
                 bmpfilename = filename.replace(".txt", ".bmp")
                 tmp = subprocess.run(["D:\\Users\\Stephan\\Documents\\GitHub\\R2D2KLASB\\Research\\CalculateSteps.exe", directory + "\\" + filename, directory+ '\\' + bmpfilename], stdout=subprocess.PIPE)
                 print(tmp.stdout.decode('utf-8'))
-                outputfile.write(directory + "\\" + filename + tmp.stdout.decode('utf-8') + "\n")
+                outputfile.write(directory + "\\" + filename + " " + tmp.stdout.decode('utf-8') + "\n")
 
 outputfile.close()
