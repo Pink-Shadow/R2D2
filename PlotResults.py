@@ -6,67 +6,65 @@ import matplotlib.pyplot as plt
 listOfdict = []
 
 for file_name in os.listdir("./original"):
-    file = open("./original/" + file_name, "r")
-    nonempty_lines = [line.strip("\n") for line in file if line != "\n"]
-    dictionary = {"file_name": file_name, "Gcode lines": len(nonempty_lines)}
-    listOfdict.append(dictionary)
-    file.close()
+    if(file_name.endswith(".txt")) and not "output_ORIGINAL" in file_name:
+        file = open("./original/" + file_name, "r")
+        nonempty_lines = [line.strip("\n") for line in file if line != "\n"]
+        dictionary = {"file_name": file_name, "Gcode lines": len(nonempty_lines)}
+        listOfdict.append(dictionary)
+        file.close()
 
 # load txt files with gcode
-for file_name in os.listdir("./original"):
-    tmp = subprocess.run(['CalculateSteps.exe', "./original/" + file_name], stdout=subprocess.PIPE)
-    for i in listOfdict:
-        if i["file_name"] == file_name:
-            i["original"] = int(tmp.stdout)
+with open("./original/output_ORIGINAL.txt", "r") as f:
+    for line in f:
+        line = line.split()
+        for i in listOfdict:
+            if i["file_name"] == line[0]:
+                i["original"] = int(line[1])
 
-print("Original done")
-
-# load txt files with gcode
-for file_name in os.listdir("./NNA"):
-    tmp = subprocess.run(['CalculateSteps.exe', "./NNA/" + file_name], stdout=subprocess.PIPE)
-    for i in listOfdict:
-        if i["file_name"] == file_name:
-            i["NNA"] = int(tmp.stdout)
-
-print("NNA done")
 
 # load txt files with gcode
-for file_name in os.listdir("./TSP"):
-    try:
-        os.mkdir("./TSP/" + file_name.strip(".txt"))
-    except FileExistsError:
-        pass
-    tmp2 = 0
-    for iteration in range(0, 1):
-        tmp = subprocess.run(['CalculateSteps.exe', "./TSP/" + file_name], stdout=subprocess.PIPE)
-        tmp2 += int(tmp.stdout)
-    tmp2 = tmp2 / 1
-    for i in listOfdict:
-        if i["file_name"] == file_name:
-            i["TSP"] = int(tmp2)
+with open("./NNA/output_NNA.txt", "r") as f:
+    for line in f:
+        line = line.split()
+        for i in listOfdict:
+            if i["file_name"] == line[0]:
+                i["NNA"] = int(line[1])
 
-print("TSP done")
+# load txt files with gcode
 
-# load txt files with gcode and get gcode line count
-for file_name in os.listdir("./custom"):
-    try:
-        os.mkdir("./custom/" + file_name.strip(".txt"))
-    except FileExistsError:
-        pass
-    tmp2 = 0
-    for iteration in range(0, 1):
-        tmp = subprocess.run(['CalculateSteps.exe', "./custom/" + file_name], stdout=subprocess.PIPE)
-        tmp2 += int(tmp.stdout)
-    tmp2 = tmp2 / 1
-    for i in listOfdict:
-        if i["file_name"] == file_name:
-            i["custom"] = int(tmp2)
+with open("./TSP_res/output_TSPRES.txt", "r") as f:
+    for line in f:
+        line = line.split()
+        line[0] = line[0].split("\\")[0] + ".txt"
+        for i in listOfdict:
+            if i["file_name"] == line[0]:
+                if i.keys().__contains__("TSP"):
+                    i["TSP"] = i["TSP"] + int(line[1])
+                else:
+                    i["TSP"] = int(line[1])
+
+for i in listOfdict:
+    i["TSP"] = i["TSP"] / 20
+
+with open("./TSP_MUT/output_TSPMUT.txt", "r") as f:
+    for line in f:
+        line = line.split()
+        line[0] = line[0].split("\\")[0] + ".txt"
+        for i in listOfdict:
+            if i["file_name"] == line[0]:
+                if i.keys().__contains__("custom"):
+                    i["custom"] = i["custom"] + int(line[1])
+                else:
+                    i["custom"] = int(line[1])
+for i in listOfdict:
+    i["custom"] = i["custom"] / 20
 
 listOfdict = sorted(listOfdict, key=lambda d: d['Gcode lines'])
 
 original = []
 for i in listOfdict:
     original.append(i["original"])
+
 NNA = []
 for i in listOfdict:
     NNA.append(i["NNA"])
@@ -99,6 +97,6 @@ ax.set_yticks(range(0, 13000000 + 1000000, 500000))
 ax.set_xticks(ticks + 0.30)
 ax.set_xticklabels(names)
 ax.set_xlabel('Number of G-code lines')
-
 ax.legend(loc='best')
+plt.savefig('HistogramImprovement.png')
 plt.show()
