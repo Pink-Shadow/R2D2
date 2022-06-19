@@ -76,7 +76,7 @@ for i in listOfdict:
     custom.append(i["custom"])
 names = []
 for i in listOfdict:
-    names.append(i["Gcode lines"])
+    names.append(str(i["Gcode lines"]) + "\n" + i["file_name"][:-4])
 
 
 # PLOT
