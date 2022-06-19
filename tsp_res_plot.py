@@ -18,7 +18,7 @@ mondriaan_4_lengths = []
 mondriaan_5_lengths = []
 pug_lengths = []
 
-with open("./TSP_MUT/output_TSPMUT.txt", "r") as f:
+with open("./TSP_res/output_TSPRES.txt", "r") as f:
     for line in f:
         line = line.split()
         if line[0].split('\\')[0] == "aston":
@@ -91,7 +91,7 @@ plt.legend(loc=9, bbox_to_anchor=(0.2, 1), ncol=2)
 plt.xlabel("path length")
 plt.ylabel("Probability")
 plt.title("ASTON")
-plt.savefig('./TSP_MUT_PLOTS/aston_standard_div.png')
+plt.savefig('./TSP_RES_PLOTS/aston_standard_div.png')
 plt.show()
 
 ########################
@@ -117,7 +117,7 @@ plt.legend(loc=9, bbox_to_anchor=(0.125, 1), ncol=2)
 plt.xlabel("path length")
 plt.ylabel("Probability")
 plt.title("CAT")
-plt.savefig('./TSP_MUT_PLOTS/cat_standard_div.png')
+plt.savefig('./TSP_RES_PLOTS/cat_standard_div.png')
 plt.show()
 
 
@@ -144,7 +144,7 @@ plt.legend(loc=9, bbox_to_anchor=(0.125, 1), ncol=2)
 plt.xlabel("path length")
 plt.ylabel("Probability")
 plt.title("DOG")
-plt.savefig('./TSP_MUT_PLOTS/dog_standard_div.png')
+plt.savefig('./TSP_RES_PLOTS/dog_standard_div.png')
 plt.show()
 
 ########################
@@ -170,7 +170,7 @@ plt.legend(loc=9, bbox_to_anchor=(0.125, 1), ncol=2)
 plt.xlabel("path length")
 plt.ylabel("Probability")
 plt.title("ELEPHANT")
-plt.savefig('./TSP_MUT_PLOTS/elephant_standard_div.png')
+plt.savefig('./TSP_RES_PLOTS/elephant_standard_div.png')
 plt.show()
 
 ########################
@@ -196,7 +196,7 @@ plt.legend(loc=9, bbox_to_anchor=(0.125, 1), ncol=2)
 plt.xlabel("path length")
 plt.ylabel("Probability")
 plt.title("F1")
-plt.savefig('./TSP_MUT_PLOTS/f1_standard_div.png')
+plt.savefig('./TSP_RES_PLOTS/f1_standard_div.png')
 plt.show()
 
 ########################
@@ -222,7 +222,7 @@ plt.legend(loc=9, bbox_to_anchor=(0.125, 1), ncol=2)
 plt.xlabel("path length")
 plt.ylabel("Probability")
 plt.title("FERRARI")
-plt.savefig('./TSP_MUT_PLOTS/ferrari_standard_div.png')
+plt.savefig('./TSP_RES_PLOTS/ferrari_standard_div.png')
 plt.show()
 
 ########################
@@ -248,7 +248,7 @@ plt.legend(loc=9, bbox_to_anchor=(0.125, 1), ncol=2)
 plt.xlabel("path length")
 plt.ylabel("Probability")
 plt.title("LAMBO")
-plt.savefig('./TSP_MUT_PLOTS/lambo_standard_div.png')
+plt.savefig('./TSP_RES_PLOTS/lambo_standard_div.png')
 plt.show()
 
 ########################
@@ -274,7 +274,7 @@ plt.legend(loc=9, bbox_to_anchor=(0.125, 1), ncol=2)
 plt.xlabel("path length")
 plt.ylabel("Probability")
 plt.title("LEEUW")
-plt.savefig('./TSP_MUT_PLOTS/leeuw_standard_div.png')
+plt.savefig('./TSP_RES_PLOTS/leeuw_standard_div.png')
 plt.show()
 
 ########################
@@ -300,7 +300,7 @@ plt.legend(loc=9, bbox_to_anchor=(0.125, 1), ncol=2)
 plt.xlabel("path length")
 plt.ylabel("Probability")
 plt.title("MONDRIAAN_1")
-plt.savefig('./TSP_MUT_PLOTS/mondriaan_1_standard_div.png')
+plt.savefig('./TSP_RES_PLOTS/mondriaan_1_standard_div.png')
 plt.show()
 
 ########################
@@ -326,7 +326,7 @@ plt.legend(loc=9, bbox_to_anchor=(0.125, 1), ncol=2)
 plt.xlabel("path length")
 plt.ylabel("Probability")
 plt.title("MONDRIAAN_2")
-plt.savefig('./TSP_MUT_PLOTS/mondriaan_2_standard_div.png')
+plt.savefig('./TSP_RES_PLOTS/mondriaan_2_standard_div.png')
 plt.show()
 
 ########################
@@ -352,7 +352,7 @@ plt.legend(loc=9, bbox_to_anchor=(0.125, 1), ncol=2)
 plt.xlabel("path length")
 plt.ylabel("Probability")
 plt.title("MONDRIAAN_3")
-plt.savefig('./TSP_MUT_PLOTS/mondriaan_3_standard_div.png')
+plt.savefig('./TSP_RES_PLOTS/mondriaan_3_standard_div.png')
 plt.show()
 
 ########################
@@ -378,7 +378,7 @@ plt.legend(loc=9, bbox_to_anchor=(0.125, 1), ncol=2)
 plt.xlabel("path length")
 plt.ylabel("Probability")
 plt.title("MONDRIAAN_4")
-plt.savefig('./TSP_MUT_PLOTS/mondriaan_4_standard_div.png')
+plt.savefig('./TSP_RES_PLOTS/mondriaan_4_standard_div.png')
 plt.show()
 
 ########################
@@ -404,7 +404,7 @@ plt.legend(loc=9, bbox_to_anchor=(0.125, 1), ncol=2)
 plt.xlabel("path length")
 plt.ylabel("Probability")
 plt.title("MONDRIAAN_5")
-plt.savefig('./TSP_MUT_PLOTS/mondriaan_5_standard_div.png')
+plt.savefig('./TSP_RES_PLOTS/mondriaan_5_standard_div.png')
 plt.show()
 
 ########################
@@ -430,5 +430,5 @@ plt.legend(loc=9, bbox_to_anchor=(0.125, 1), ncol=2)
 plt.xlabel("path length")
 plt.ylabel("Probability")
 plt.title("PUG")
-plt.savefig('./TSP_MUT_PLOTS/pug_standard_div.png')
+plt.savefig('./TSP_RES_PLOTS/pug_standard_div.png')
 plt.show()
