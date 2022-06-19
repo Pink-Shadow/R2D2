@@ -11,7 +11,7 @@ print(os.getcwd())
 
 #open txtfile
 outputfile = open("output_TSPRES.txt", "w")
-for directory  in os.listdir(os.getcwd()):
+for directory  in os.listdir():
 #check if file is directory
     if os.path.isdir(directory):
         for filename in os.listdir(directory):
@@ -19,6 +19,6 @@ for directory  in os.listdir(os.getcwd()):
                 bmpfilename = filename.replace(".txt", ".bmp")
                 tmp = subprocess.run(["D:\\Users\\Stephan\\Documents\\GitHub\\R2D2KLASB\\Research\\CalculateSteps.exe", directory + "\\" + filename, directory+ '\\' + bmpfilename], stdout=subprocess.PIPE)
                 print(directory + "\\" + filename + "\t" + tmp.stdout.decode('utf-8'))
-                outputfile.write(directory + "\\" + filename + tmp.stdout.decode('utf-8') + "\n")
+                outputfile.write(directory + "\\" + filename + " " + tmp.stdout.decode('utf-8') + "\n")
 
 outputfile.close()
