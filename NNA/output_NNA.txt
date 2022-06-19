@@ -6,9 +6,9 @@ f1.txt 2039026
 ferrari.txt 1623075
 lambo.txt 1747626
 leeuw.txt 7079453
-mondiriaan_1.txt 480733
-mondiriaan_2.txt 2356085
-mondiriaan_3.txt 1878909
-mondiriaan_4.txt 4309094
-mondiriaan_5.txt 2520273
+mondriaan_1.txt 480733
+mondriaan_2.txt 2356085
+mondriaan_3.txt 1878909
+mondriaan_4.txt 4309094
+mondriaan_5.txt 2520273
 pug.txt 4492966
