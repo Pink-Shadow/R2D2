@@ -31,9 +31,14 @@ def getStartToEnd(coords):
 
 def parse_gcode(file_name):
     gcode = []
+    prev_line = ""
     with open(file_name, "r") as gcode_file:
         data = gcode_file.readlines()
         for line in data:
+            if line == prev_line:            
+                prev_line = line
+                continue
+            prev_line = line
             tmp = gcode_class()
             elements = line.split(' ')
             for e in elements:

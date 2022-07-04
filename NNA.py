@@ -27,7 +27,7 @@ def calculateDistance(x1, y1, x2, y2):
 
 def optimize(lines):
     new_lines = []
-    current_loc = [0, 0]
+    current_loc = [30000, 25000]
 
     l = len(lines)
 
