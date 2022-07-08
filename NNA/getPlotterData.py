@@ -11,7 +11,7 @@ print(os.getcwd())
 #open txtfile
 outputfile = open("output_NNA.txt", "w")
 for filename in os.listdir(os.getcwd()):
-    if filename.endswith(".txt"):
+    if filename.endswith(".txt") and filename != "output_NNA.txt":
         bmpfilename = filename.replace(".txt", ".bmp")
         tmp = subprocess.run(["D:\\Users\\Stephan\\Documents\\GitHub\\R2D2KLASB\\Research\\CalculateSteps.exe", filename, bmpfilename], stdout=subprocess.PIPE)
         print(filename + "\t" + tmp.stdout.decode('utf-8'))

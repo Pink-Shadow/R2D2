@@ -1,0 +1,649 @@
+starts with 46070 lines
+46000 lines left
+69 breaks
+3130363 checks skipped
+24 loops came across index 0
+
+
+
+45500 lines left
+569 breaks
+25964163 checks skipped
+25 loops came across index 0
+
+
+
+45000 lines left
+1069 breaks
+48588913 checks skipped
+25 loops came across index 0
+
+
+
+44500 lines left
+1569 breaks
+70963663 checks skipped
+25 loops came across index 0
+
+
+
+44000 lines left
+2069 breaks
+93088413 checks skipped
+25 loops came across index 0
+
+
+
+43500 lines left
+2569 breaks
+114963163 checks skipped
+25 loops came across index 0
+
+
+
+43000 lines left
+3069 breaks
+136587913 checks skipped
+25 loops came across index 0
+
+
+
+42500 lines left
+3569 breaks
+157962663 checks skipped
+25 loops came across index 0
+
+
+
+42000 lines left
+4069 breaks
+179087413 checks skipped
+25 loops came across index 0
+
+
+
+41500 lines left
+4569 breaks
+199962163 checks skipped
+25 loops came across index 0
+
+
+
+41000 lines left
+5069 breaks
+220586913 checks skipped
+25 loops came across index 0
+
+
+
+40500 lines left
+5560 breaks
+240348097 checks skipped
+40 loops came across index 0
+
+
+
+40000 lines left
+6060 breaks
+260472847 checks skipped
+40 loops came across index 0
+
+
+
+39500 lines left
+6560 breaks
+280316860 checks skipped
+41 loops came across index 0
+
+
+
+39000 lines left
+7060 breaks
+299941610 checks skipped
+41 loops came across index 0
+
+
+
+38500 lines left
+7560 breaks
+319316360 checks skipped
+41 loops came across index 0
+
+
+
+38000 lines left
+8060 breaks
+338441110 checks skipped
+41 loops came across index 0
+
+
+
+37500 lines left
+8560 breaks
+357315860 checks skipped
+41 loops came across index 0
+
+
+
+37000 lines left
+9060 breaks
+375940610 checks skipped
+41 loops came across index 0
+
+
+
+36500 lines left
+9560 breaks
+394315360 checks skipped
+41 loops came across index 0
+
+
+
+36000 lines left
+10060 breaks
+412440110 checks skipped
+41 loops came across index 0
+
+
+
+35500 lines left
+10560 breaks
+430314860 checks skipped
+41 loops came across index 0
+
+
+
+35000 lines left
+11060 breaks
+447939610 checks skipped
+41 loops came across index 0
+
+
+
+34500 lines left
+11560 breaks
+465314360 checks skipped
+41 loops came across index 0
+
+
+
+34000 lines left
+12060 breaks
+482439110 checks skipped
+41 loops came across index 0
+
+
+
+33500 lines left
+12560 breaks
+499313860 checks skipped
+41 loops came across index 0
+
+
+
+33000 lines left
+13060 breaks
+515938610 checks skipped
+41 loops came across index 0
+
+
+
+32500 lines left
+13560 breaks
+532313360 checks skipped
+41 loops came across index 0
+
+
+
+32000 lines left
+14060 breaks
+548438110 checks skipped
+41 loops came across index 0
+
+
+
+31500 lines left
+14560 breaks
+564312860 checks skipped
+41 loops came across index 0
+
+
+
+31000 lines left
+15060 breaks
+579937610 checks skipped
+41 loops came across index 0
+
+
+
+30500 lines left
+15558 breaks
+595220455 checks skipped
+44 loops came across index 0
+
+
+
+30000 lines left
+16039 breaks
+609231683 checks skipped
+81 loops came across index 0
+
+
+
+29500 lines left
+16500 breaks
+622083867 checks skipped
+149 loops came across index 0
+
+
+
+29000 lines left
+16980 breaks
+635595053 checks skipped
+187 loops came across index 0
+
+
+
+28500 lines left
+17477 breaks
+649797237 checks skipped
+193 loops came across index 0
+
+
+
+28000 lines left
+17977 breaks
+663921987 checks skipped
+193 loops came across index 0
+
+
+
+27500 lines left
+18461 breaks
+676883322 checks skipped
+226 loops came across index 0
+
+
+
+27000 lines left
+18925 breaks
+688792921 checks skipped
+289 loops came across index 0
+
+
+
+26500 lines left
+19401 breaks
+700938548 checks skipped
+335 loops came across index 0
+
+
+
+26000 lines left
+19888 breaks
+713380740 checks skipped
+361 loops came across index 0
+
+
+
+25500 lines left
+20379 breaks
+725818712 checks skipped
+378 loops came across index 0
+
+
+
+25000 lines left
+20860 breaks
+737534373 checks skipped
+414 loops came across index 0
+
+
+
+24500 lines left
+21341 breaks
+749017372 checks skipped
+450 loops came across index 0
+
+
+
+24000 lines left
+21832 breaks
+760680722 checks skipped
+469 loops came across index 0
+
+
+
+23500 lines left
+22319 breaks
+771986634 checks skipped
+493 loops came across index 0
+
+
+
+23000 lines left
+22802 breaks
+782864313 checks skipped
+525 loops came across index 0
+
+
+
+22500 lines left
+23302 breaks
+794239063 checks skipped
+525 loops came across index 0
+
+
+
+22000 lines left
+23802 breaks
+805363813 checks skipped
+525 loops came across index 0
+
+
+
+21500 lines left
+24302 breaks
+816238563 checks skipped
+525 loops came across index 0
+
+
+
+21000 lines left
+24783 breaks
+826058783 checks skipped
+563 loops came across index 0
+
+
+
+20500 lines left
+25271 breaks
+835977164 checks skipped
+585 loops came across index 0
+
+
+
+20000 lines left
+25754 breaks
+845452614 checks skipped
+617 loops came across index 0
+
+
+
+19500 lines left
+26227 breaks
+854375712 checks skipped
+665 loops came across index 0
+
+
+
+19000 lines left
+26694 breaks
+862810115 checks skipped
+727 loops came across index 0
+
+
+
+18500 lines left
+27149 breaks
+870669793 checks skipped
+808 loops came across index 0
+
+
+
+18000 lines left
+27607 breaks
+878423531 checks skipped
+883 loops came across index 0
+
+
+
+17500 lines left
+28082 breaks
+886463191 checks skipped
+930 loops came across index 0
+
+
+
+17000 lines left
+28563 breaks
+894482661 checks skipped
+965 loops came across index 0
+
+
+
+16500 lines left
+29037 breaks
+902005460 checks skipped
+1016 loops came across index 0
+
+
+
+16000 lines left
+29520 breaks
+909565563 checks skipped
+1051 loops came across index 0
+
+
+
+15500 lines left
+29983 breaks
+916338426 checks skipped
+1121 loops came across index 0
+
+
+
+15000 lines left
+30458 breaks
+923197922 checks skipped
+1171 loops came across index 0
+
+
+
+14500 lines left
+30932 breaks
+929817204 checks skipped
+1222 loops came across index 0
+
+
+
+14000 lines left
+31398 breaks
+936033658 checks skipped
+1286 loops came across index 0
+
+
+
+13500 lines left
+31881 breaks
+942452488 checks skipped
+1319 loops came across index 0
+
+
+
+13000 lines left
+32339 breaks
+948070608 checks skipped
+1395 loops came across index 0
+
+
+
+12500 lines left
+32802 breaks
+953566119 checks skipped
+1464 loops came across index 0
+
+
+
+12000 lines left
+33269 breaks
+958927210 checks skipped
+1527 loops came across index 0
+
+
+
+11500 lines left
+33716 breaks
+963663404 checks skipped
+1624 loops came across index 0
+
+
+
+11000 lines left
+34180 breaks
+968530862 checks skipped
+1691 loops came across index 0
+
+
+
+10500 lines left
+34654 breaks
+973380165 checks skipped
+1740 loops came across index 0
+
+
+
+10000 lines left
+35108 breaks
+977603974 checks skipped
+1828 loops came across index 0
+
+
+
+9500 lines left
+35576 breaks
+981932375 checks skipped
+1884 loops came across index 0
+
+
+
+9000 lines left
+36013 breaks
+985455166 checks skipped
+2003 loops came across index 0
+
+
+
+8500 lines left
+36470 breaks
+989174456 checks skipped
+2077 loops came across index 0
+
+
+
+8000 lines left
+36929 breaks
+992659855 checks skipped
+2155 loops came across index 0
+
+
+
+7500 lines left
+37364 breaks
+995608588 checks skipped
+2275 loops came across index 0
+
+
+
+7000 lines left
+37844 breaks
+998963974 checks skipped
+2312 loops came across index 0
+
+
+
+6500 lines left
+38317 breaks
+1001987023 checks skipped
+2364 loops came across index 0
+
+
+
+6000 lines left
+38771 breaks
+1004599789 checks skipped
+2447 loops came across index 0
+
+
+
+5500 lines left
+39243 breaks
+1007163199 checks skipped
+2501 loops came across index 0
+
+
+
+5000 lines left
+39725 breaks
+1009619525 checks skipped
+2533 loops came across index 0
+
+
+
+4500 lines left
+40188 breaks
+1011659758 checks skipped
+2602 loops came across index 0
+
+
+
+4000 lines left
+40633 breaks
+1013354830 checks skipped
+2703 loops came across index 0
+
+
+
+3500 lines left
+41088 breaks
+1014911735 checks skipped
+2788 loops came across index 0
+
+
+
+3000 lines left
+41541 breaks
+1016265747 checks skipped
+2870 loops came across index 0
+
+
+
+2500 lines left
+42001 breaks
+1017446543 checks skipped
+2942 loops came across index 0
+
+
+
+2000 lines left
+42460 breaks
+1018399533 checks skipped
+3018 loops came across index 0
+
+
+
+1500 lines left
+42922 breaks
+1019152366 checks skipped
+3086 loops came across index 0
+
+
+
+1000 lines left
+43394 breaks
+1019716212 checks skipped
+3137 loops came across index 0
+
+
+
+500 lines left
+43837 breaks
+1020015564 checks skipped
+3258 loops came across index 0
+
+
+
+0 lines left
+44271 breaks
+1020116383 checks skipped
+3390 loops came across index 0
