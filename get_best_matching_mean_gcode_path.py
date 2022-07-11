@@ -11,7 +11,8 @@ def get_all_step_data_TSP():
             line = line.strip()
             line = line.replace("_", " ").replace(".", " ")
             line = line.split(" ")
-
+            if f"{line[1]}" == "mondriaan":
+                line[1] = "mondriaan_{}".format(line[2])
             if f"{line[1]}" in data:
                 data[line[1]].append((int(line[-1]), str(f"{line[0]}_{line[1]}.txt")))
 
