@@ -1,0 +1,15 @@
+aston.txt 280573200
+cat.txt 774294300
+dog.txt 1005341900
+elephant.txt 1214286700
+f1.txt 413915300
+ferrari.txt 295683200
+lambo.txt 293429400
+leeuw.txt 1774268600
+mondriaan_1.txt 72167400
+mondriaan_2.txt 443457200
+mondriaan_3.txt 477026300
+mondriaan_4.txt 1309745800
+mondriaan_5.txt 866667000
+pauw.txt 2914626700
+pug.txt 1246434500
