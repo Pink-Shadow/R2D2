@@ -1,4 +1,5 @@
 import os
+from re import L, U
 from sys import maxsize
 import numpy as np
 import matplotlib.pyplot as plt
@@ -28,7 +29,6 @@ with open("./original/output_ORIGINAL_STEPS.txt", "r") as f:
 
 with open("./original/output_ORIGINAL_TIME.txt", "r") as f:
     for line in f:
-        print(line)
         line = line.split()
         for i in listOfdict:
             if i["file_name"] == line[0]:
@@ -36,7 +36,30 @@ with open("./original/output_ORIGINAL_TIME.txt", "r") as f:
                 if int(line[1])/1000000 > max_time:
                     max_time = int(line[1])/1000000
         
+current_file = ""
+gemiddelde_duur = 0
+tijden = []
 
+with open("./NNA_logging2.txt", "r") as f:
+    for line in f:
+        if line.startswith("Bestand: "):
+            line = line.split()
+            current_file = line[1]
+        elif line.startswith("Gemiddelde_duur: "):
+            line = line.split()
+            gemiddelde_duur = float(line[1])
+        elif line.startswith("Tijdenlijst: "):
+            line = line.split(": ")[1]
+            line = line[1:-2]
+            for tijd in line.split(", "):
+                tijden.append(float(tijd))
+            for i in listOfdict:
+                if i["file_name"] == current_file:
+                    i["GEM_CALCULATION_TIME"] = gemiddelde_duur
+                    i["NNA_CALCULATION_TIME_list"] = tijden
+            current_file = ""
+            gemiddelde_duur = 0
+            tijden = []
 
 # load txt files with gcode
 with open("./NNA/output_NNA_STEPS.txt", "r") as f:
@@ -55,9 +78,14 @@ with open("./NNA/output_NNA_TIME.txt", "r") as f:
         line = line.split()
         for i in listOfdict:
             if i["file_name"] == line[0]:
-                i["NNA_TIME"] = int(line[1])/1000000
-                if int(line[1])/1000000 > max_time:
-                    max_time = int(line[1])/1000000
+                i["NNA_DRAW_TIME"] = int(line[1])/1000000
+                i["NNA_TIME"] = int(line[1])/1000000 + i["GEM_CALCULATION_TIME"]
+                i["NNA_TIME_list"] = []
+                for tijd in i["NNA_CALCULATION_TIME_list"]:
+                     i["NNA_TIME_list"].append(int(line[1])/1000000 + tijd)
+                if max(i["NNA_TIME_list"]) > max_time:
+                    max_time = max(i["NNA_TIME_list"])
+                
 
 # load txt files with gcode
 
@@ -83,14 +111,16 @@ with open("./PYTHON_TSP/output_TSP_PYTHON_TIME.txt", "r") as f:
         for i in listOfdict:
             if i["file_name"] == line[0]:
                 if i.keys().__contains__("TSP_TIME"):
-                    i["TSP_TIME"] = i["TSP_TIME"] + int(line[1])/1000000
-                    i["TSP_TIME_list"].append(int(line[1])/1000000)
+                    i["TSP_TIME"] = i["TSP_TIME"] + int(line[1])/1000000 + i["GEM_CALCULATION_TIME"]
+                    i["TSP_TIME_list"].append(int(line[1])/1000000 + i["GEM_CALCULATION_TIME"])
                 else:
-                    i["TSP_TIME"] = int(line[1])/1000000
-                    i["TSP_TIME_list"] = [int(line[1])/1000000]
+                    i["TSP_TIME"] = int(line[1])/1000000 + i["GEM_CALCULATION_TIME"]
+                    i["TSP_TIME_list"] = [int(line[1])/1000000 + i["GEM_CALCULATION_TIME"]]       
 
 for i in listOfdict:
     try:
+        i["NNA_TIME_stddev"] = np.std(i["NNA_TIME_list"])
+
         i["TSP_STEPS"] = i["TSP_STEPS"] / 20
         i["TSP_TIME"] = i["TSP_TIME"] / 20
         if i["TSP_STEPS"] > max_steps:
@@ -112,24 +142,16 @@ with open("./PYTHON_TSP/objects.txt", "r") as f:
 listOfdict = sorted(listOfdict, key=lambda d: d['Gcode lines'])
 
 original_STEPS = []
-original_TIME = []
 NNA_STEPS = []
-NNA_TIME = []
 TSP_STEPS = []
-TSP_TIME = []
-TSP_TIME_ERROR = []
 TSP_STEPS_ERROR = []
 
 names = []
 for i in listOfdict:
     original_STEPS.append(i["original_STEPS"])
-    # original_TIME.append(i["original_TIME"])
     NNA_STEPS.append(i["NNA_STEPS"])
-    # NNA_TIME.append(i["NNA_TIME"])
     TSP_STEPS.append(i["TSP_STEPS"])
-    # TSP_TIME.append(i["TSP_TIME"])
     TSP_STEPS_ERROR.append(i["TSP_STEPS_stddev"])
-    # TSP_TIME_ERROR.append(i["TSP_TIME_stddev"])
     names.append(str(i["Gcode lines"]) + "\n" + i["file_name"][:-4])
 
 # PLOT
@@ -158,25 +180,17 @@ plt.show()
 listOfdict = sorted(listOfdict, key=lambda d: d['Objects'])
 
 original_STEPS = []
-original_TIME = []
 NNA_STEPS = []
-NNA_TIME = []
 TSP_STEPS = []
-TSP_TIME = []
-TSP_TIME_ERROR = []
 TSP_STEPS_ERROR = []
 
 names = []
 for i in listOfdict:
     original_STEPS.append(i["original_STEPS"])
-    original_TIME.append(i["original_TIME"])
     
     NNA_STEPS.append(i["NNA_STEPS"])
-    NNA_TIME.append(i["NNA_TIME"])
     TSP_STEPS.append(i["TSP_STEPS"])
-    TSP_TIME.append(i["TSP_TIME"])
     TSP_STEPS_ERROR.append(i["TSP_STEPS_stddev"])
-    TSP_TIME_ERROR.append(i["TSP_TIME_stddev"])
     names.append(str(i["Gcode lines"]) + "\n" + i["file_name"][:-4])
 
 
@@ -203,41 +217,43 @@ plt.show()
 
 listOfdict = sorted(listOfdict, key=lambda d: d['original_TIME'])
 
-original_STEPS = []
 original_TIME = []
-NNA_STEPS = []
-NNA_TIME = []
-TSP_STEPS = []
-TSP_TIME = []
-TSP_TIME_ERROR = []
-TSP_STEPS_ERROR = []
+NNA_CALCULATION_TIME = []
+NNA_CALCULATION_TIME_ERROR = []
+NNA_DRAW_TIME = []
+TSP_DRAW_TIME = []
+TSP_CALCULATION_TIME = []
+TSP_DRAW_ERROR = []
+
 
 names = []
+
 for i in listOfdict:
-    original_STEPS.append(i["original_STEPS"])
     original_TIME.append(i["original_TIME"])
-    
-    NNA_STEPS.append(i["NNA_STEPS"])
-    NNA_TIME.append(i["NNA_TIME"])
-    TSP_STEPS.append(i["TSP_STEPS"])
-    TSP_TIME.append(i["TSP_TIME"])
-    TSP_STEPS_ERROR.append(i["TSP_STEPS_stddev"])
-    TSP_TIME_ERROR.append(i["TSP_TIME_stddev"])
+    NNA_CALCULATION_TIME.append(i["GEM_CALCULATION_TIME"] + i["NNA_DRAW_TIME"])
+    NNA_CALCULATION_TIME_ERROR.append(np.std(i["NNA_CALCULATION_TIME_list"]))
+    NNA_DRAW_TIME.append(i["NNA_DRAW_TIME"])
     names.append(str(i["Gcode lines"]) + "\n" + i["file_name"][:-4])
+    TSP_CALCULATION_TIME.append(i["GEM_CALCULATION_TIME"])
+    TSP_DRAW_TIME.append(i["TSP_TIME"])
+    TSP_DRAW_ERROR.append(i["TSP_TIME_stddev"])
 
 # PLOT
 fig = plt.figure(figsize=(20, 10))
 left, bottom, width, height = 0.1, 0.1, 0.8, 0.8
 ax = fig.add_axes([left, bottom, width, height])
+ax.grid(axis = 'y')
 
 width = 0.2
 ticks = np.arange(len(listOfdict))
-ax.bar(ticks, original_TIME, width, label='Original')
-ax.bar(ticks + width, NNA_TIME, width, align="center", label='NNA')
-ax.bar(ticks + width * 2, TSP_TIME, width, label='TSP', yerr=TSP_TIME_ERROR, capsize=5)
+ax.bar(ticks, original_TIME, width, label='Original drawing time')
+ax.bar(ticks + width, NNA_CALCULATION_TIME, width, align="center", label='NNA calculation time', yerr=NNA_CALCULATION_TIME_ERROR, capsize=5)
+ax.bar(ticks + width, NNA_DRAW_TIME, width, label='NNA drawing time')
+ax.bar(ticks + width * 2, TSP_DRAW_TIME, width, label='TSP drawing time', yerr=TSP_DRAW_ERROR, capsize=5)
+ax.bar(ticks + width * 2, TSP_CALCULATION_TIME, width, label='TSP calculation time')
 
 ax.set_ylabel('time in S')
-ax.set_title('Time per Algorithm')
+ax.set_title('Time per Algorithm (Calculation time + drawing time)')
 ax.set_yticks(range(0, int(max_time)+10, 100))
 ax.set_xticks(ticks + 0.30)
 ax.set_xticklabels(names)
