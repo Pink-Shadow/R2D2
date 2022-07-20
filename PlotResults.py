@@ -198,6 +198,7 @@ for i in listOfdict:
 fig = plt.figure(figsize=(20, 10))
 left, bottom, width, height = 0.1, 0.1, 0.8, 0.8
 ax = fig.add_axes([left, bottom, width, height])
+ax.grid(axis = 'y')
 
 width = 0.2
 ticks = np.arange(len(listOfdict))

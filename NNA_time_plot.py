@@ -41,7 +41,7 @@ if __name__ == "__main__":
                 print(name, value)
                 if name[0] == value+".txt":
                     times.append(name[1])
-
+    plt.grid(axis='y')
     plt.ylabel("Time in seconds")
     plt.xlabel("Objects per file")
     plt.bar(names,times)
